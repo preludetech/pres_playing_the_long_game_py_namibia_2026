@@ -35,18 +35,24 @@
 			font-family: "Exo 2", sans-serif !important;
 
 		}
+
+		/* Leaf decoration visibility control */
+		.leaf-decoration {
+			transition: opacity 0.3s ease;
+		}
+
+		.hide-leaves .leaf-decoration {
+			opacity: 0 !important;
+			pointer-events: none;
+		}
 	</style>
 
 </head>
 
 <body>
-	<div
-		style="position: absolute; bottom:0.5em; font-size:2em ; text-align: left; width: 100%; color: gray; padding-left: 0.5em;">
-		prelude.tech | @sheena@fosstodon.org | https://sheenaoc.com | x: @sheena_oconnell
-	</div>
 
-	<div style="position: absolute; opacity:0.1; right: 7em; top: 2em">
-		<img src="/images/brand/Prelude - Leaf.svg" style="
+	<div class="leaf-decoration" style="position: absolute; opacity:0.1; right: 7em; top: 2em">
+		<img src="images/brand/Prelude - Leaf.svg" style="
 		-moz-transform: scale(2.5);
     	-ms-transform: scale(2.5);
     	-o-transform: scale(2.5);
@@ -54,8 +60,8 @@
     	transform: scale(2.5);" />
 	</div>
 
-	<div style="position: absolute; opacity:0.1; left: 0em; bottom: 0em">
-		<img src="/images/brand/Prelude - Leaf.svg" style="
+	<div class="leaf-decoration" style="position: absolute; opacity:0.1; left: 0em; bottom: 0em">
+		<img src="images/brand/Prelude - Leaf.svg" style="
 		-moz-transform: scale(1.5);
     	-ms-transform: scale(1.5);
     	-o-transform: scale(1.5);
@@ -63,311 +69,456 @@
     	transform: scale(1.5);" />
 	</div>
 
-	<div style="position: absolute; top:1em; left:1em">
-		<img src="/images/brand/Prelude - Logo.svg" width="250em" />
-	</div>
-
 	<div class="reveal">
 		<div class="slides">
+
 			<section>
-				<h1>So you want a modern frontend for your Python web app?</h1>
+				<h2>How this works</h2>
+
+				<p>The presentation starts in a few slides</p>
+				<p>Use the arrow keys to go back/forward</p>
+				<p>Use the Esc key to toggle an overview</p>
+
+				<p>If you are using a phone: Swipe up to proceed</p>
+
 			</section>
 
 			<section>
-				<h2>Frontend web evolution</h2>
+				<h2>Useful links</h2>
+
+
 				<ul>
-					<li class="fragment">Epoch 1: The Web is born</li>
-					<li class="fragment">Epoch 2: SPA revolution + JS Fatigue</li>
-					<li class="fragment">Epoch 3: You are here</li>
-				</ul>
-			</section>
+					<li><a href="https://prelude.tech/">Prelude training</a>
 
-				
-			<section>
-				<h2>Epoch 1: The Web is born</h2>
-				<img src="images/web1.jpg"/>
-			</section>
+						<ul>
+							<li><a href="mailto:hello@prelude.tech">hello@prelude.tech</a></li>
+							<li><a href="https://cal.com/sheena-oconnell/explore">Book an exploratory call</a></li>
+						</ul>
+					</li>
 
-			<section>
-				Architecture:
 
-				Fileserver + Clients 
+					<li><a href="https://guildofeducators.org/">Guild of educators</a></li>
 
-				Webserver + Clients 
-			</section>
-
-			<section>
-				<h2>Epoch 2: SPA revolution</h2>
-			</section>
-
-			<section>
-				<h2>Modern Users need...</h2>
-				<ul>
-					<li class="fragment">Instant feedback for actions</li>
-					<li class="fragment">Partial page updates, communication with server</li>
-					<li class="fragment">Navigation feels fast</li>
-					<li class="fragment">Smooth interactions and animations</li>
-					<li class="fragment">UI needs to "remember" things (state management)</li>
-					<li class="fragment">Attractive, modern design</li>
-					<li class="fragment">Responsive and accessabile</li>
-					<li class="fragment">Fast load times (code should be small)</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Tools and solutions</h2>
+				<h1>Playing the long game</h1>
+				<h2 class="fragment">🤖 In the age of LLMs 🤖</h2>
+			</section>
+
+
+			<section>
+				<h2>Software development is changing in major ways</h2>
 				<ul>
-					<li class="fragment">AJAX and JQuery</li>
-					<li class="fragment">Angular - SPA architecture</li>
-					<li class="fragment">React - Component-based architecture + Virtual DOM</li>
-					<li class="fragment">JS evolved and needed to be transpiled with Babel</li>
-					<li class="fragment">Webpack - combine, minify and transpile code</li>
-					<li class="fragment">Sass and Less made CSS more managable</li>
-					<li class="fragment">Component libraries - MUI</li>
-					<li class="fragment">Web platform improvements - Shadow DOM and WebComponents</li>
+					<li class="fragment">The Internet is full of hype and truths</li>
+					<li class="fragment">More and more code is written by LLMs</li>
+					<li class="fragment">Sometimes this goes well, sometimes really badly</li>
+					<li class="fragment">New roles and organization structures</li>
+					<li class="fragment">Deluge of new tools and practices - AI Fatigue</li>
+					<li class="fragment">Hard to know what skills will be future-proof</li>
 				</ul>
 			</section>
 
-			<section>
-					<h2>General process for solving problems...</h2>
-					<h1 class="fragment">Add more stuff!</h1>
-					<p class="fragment">What if we did the opposite?</p>
-			</section>
-
-
+			<!-- <section>
+				<h2>How do we become future-proof?</h2>
+				<ul>
+					<li class="fragment">Focus: Early career software developers</li>
+					<li class="fragment">What skills and mindsets are worth building?</li>
+					<!-- <li class="fragment">How I think about using these tools</li> 
+				</ul>
+			</section> -->
 
 			<section>
 				<h2>Hi, I'm Sheena</h2>
-				<span class="fragment">
-					🧗‍♀️🏕️🧭🇿🇦🖊️🛠️🔥🐕🎸👽👩🏻‍💻 🧑‍🏫
-				</span>
-				<ul>
-					<li class="fragment">Coding since young teen</li>
-					<li class="fragment">Worked in a lot of startups</li>
-					<li class="fragment">
-						Spent the last 5+ years in tech education
 
+				<span class="fragment">
+					🧗‍♀️🏕️🧭🇿🇦🖊️🛠️🔥🐕🎸👩🏻‍💻 🧑‍🏫
+				</span>
+
+				<ul>
+					<li class="fragment">Software engineer + lead</li>
+					<li class="fragment">Educator
 						<ul>
-							<li class="fragment">science of ed => engineering
-								of ed</li>
+							<li class="fragment">Science of ed => Engineering of ed</li>
+							<li class="fragment">Non-profit - launching tech careers in 🇿🇦</li>
+							<li class="fragment">Prelude - Advanced Python + Teamwork</li>
+							<li class="fragment">Guild of Educators</li>
 						</ul>
 					</li>
-					<li class="fragment">Conference organiser</li>
-					<li class="fragment">
-						PSF Education and outreach workgroup co-chair
+				</ul>
+			</section>
+
+			<section>
+				<h2>Python community involvement</h2>
+
+
+				<ul>
+					<li class="fragment">PSF Director</li>
+					<!-- <li class="fragment">DSF member</li> -->
+					<li class="fragment">Conference organizer
+						<ul>
+							<!-- <li class="fragment">DjangoCon Africa 1 - organizer</li>
+								<li class="fragment">PyConZA (South Africa)</li> -->
+							<li class="fragment">PyCon Africa 2025 Chair</li>
+						</ul>
 					</li>
-					<li class="fragment">Founded Guild of Educators</li>
-					<li class="fragment">Founded Prelude</li>
 				</ul>
+
+
 			</section>
 
-			<section>
-				Current architecture 
 
-				Backend: API
-				Frontend: React/Vue/etc 
-
-				Example: React front 
-				Example 2: NextJS front 
-			</section>
-
-			<section>
-				<h2>Need a lot of skills</h2>
-				<ul>
-					<li class="fragment">Frontend development is <a href="https://roadmap.sh/frontend">complicated</a></li>
-					<li class="fragment">Full stack developers need a lot of skills</li>
-					<li class="fragment">Full stack dev - large context, lots of switching, testing is complicated</li>
-					<li class="fragment">Deployment and versioning (Moar tools! NextJS?)</li>
-				</ul>
-			</section>
-
-			<section>
-					<h2>Organisations that do web dev</h2>
-					<ul>
-						<li class="fragment">Fullstack devs are expensive</li>
-						<li class="fragment">Backend team / Frontend team</li>
-						<li class="fragment">Teamwork complexities + friction (add more tools? GraphQL?)</li>
-						<li class="fragment">Extra handoffs, more task juggling</li>
-						<li class="fragment">Add project management capacity</li>
-					</ul>
-			</section>
-
-			<section>
-				<h2>Where does that leave the junior dev?</h2>
-				<ul>
-					<li class="fragment">Web dev used to be a gateway to Software Eng</li>
-					<li class="fragment">Orgs don't hire juniors - only intermediate and upwards (expensive)</li>
-					<li class="fragment">Juniors struggle to get the xp they need to be useful - future talent vaccume</li>
-				</ul>
-			</section>
-
-			<section>
+			<!-- <section>
 				<h2>
-					Epoch 3: Simple is better than complex
+					AI and education
 				</h2>
+				<ul>
+					<li class="fragment">Preparing people for the future is my whole focus</li>
+					<li class="fragment">Work on multiple scales: Individuals, teams, organizations</li>
+					<li class="fragment">Lots of people ask me for career advice </li>
+				</ul>
+				<h1 class="fragment">😨</h1>
+			</section> -->
+
+
+			<!-- <section>
+				<h2>Table of contents</h2>
+				<ol>
+					<li class="fragment">Looking back to look forward</li>
+					<li class="fragment">Evolving capabilities</li>
+					<li class="fragment">The bubble</li>
+					<li class="fragment">How to adapt</li>
+				</ol>
+			</section> -->
+
+			<section>
+				<h2>What are we doing here</h2>
+				<ul>
+					<li class="fragment">My latest thinking</li>
+					<li class="fragment">Not the final word</li>
+					<li class="fragment">Based on LOTS of research and experimentation</li>
+				</ul>
 			</section>
 
 			<section>
-				<h2>What would we need to do to HTML to make it good enough to support the modern web?</h2>
+				<h2>Chapter 1</h2>
+				<h1>Is software engineering going away?</h1>
+			</section>
+
+			<section>
+				<h3>What is software engineering</h3>
+				<ul style="font-size: 0.9em">
+					<li class="fragment">Not a translator</li>
+					<li class="fragment">Creative problem solvers</li>
+					<li class="fragment">Expert learners - new tech, new domains</li>
+					<li class="fragment">Figure out what problems to solve</li>
+					<li class="fragment">Organise knowledge</li>
+					<li class="fragment">Deeply appreciate DRY, cohesion, loose-coupling, version control</li>
+					<li class="fragment">Place bets, defer decisions to reduce risk</li>
+					<li class="fragment">Rational, logical, intentional, structured thinkers</li>
+					<li class="fragment">We bring taste, morality, intention to our work</li>
+					<li class="fragment">We <s>write</s> produce code</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>The best engineers</h2>
+				<ul>
+					<li class="fragment">Often ended up coordinating other engineers</li>
+					<li class="fragment">"Soft skills" very important</li>
+					<li class="fragment">Technical skills CRITICAL</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>How much technical skill</h2>
+				<ul>
+					<li class="fragment">"Build me the new flappy bird" => 😋</li>
+					<li class="fragment">"Build me the new Gmail" => 😨</li>
+					
+					<li class="fragment">"Control this nuclear power station" => 😱</li>
+				</ul>
+			</section>
+
+			<section data-background="images/gemini/weights-black.png" data-background-opacity="0.3" data-state="hide-leaves" class="">
+				<h2>Where do those skills some from?</h2>
+			</section>
+
+			<section>
+				<h2>People solve problems for people</h2>
+				
+				<ul>
+					<li class="fragment">Who understands the problems of Namibia better than you?</li>
+					<li class="fragment">Namibian context is not taken into account by default</li>
+					<li class="fragment">LLMs have no taste, empathy. They miss the point</li>
+					<li class="fragment">Getting an LLM to "understand" your intention is hard!</li>
+					<!-- <li class="fragment">Produce your own original digital knowledge</li> -->
+				</ul>
+			</section>
+
+			<section>
+				<img src="images/gemini/buttonn.png"/>
+				<h3 class="fragment">The more nuance there is to a problem, the more likely it is to miss the point</h3>
+			</section>
+
+			
+
+			<section>
+				<h2>Chapter 2</h2>
+				<h1>What about the future of software engineering?</h1>
+			</section>
+
+			<section data-background="images/gemini/sam-color.png" data-background-opacity="0.3"
+				data-state="hide-leaves" class="">
+				<h2>Feb 2025</h2>
+
+				<p>
+					"The intelligence of an AI model roughly equals the log of the resources used to train and run it.
+					These resources are chiefly training compute, data, and inference compute. It appears that you can
+					<strong>spend arbitrary amounts of money and get continuous and predictable gains;</strong> the
+					scaling laws that predict this are accurate over many orders of magnitude."
+				</p>
+				<p>
+					- Sam Altman
+				</p>
+				</section>
+
+			<section data-background="images/gemini/rocketship.png" data-background-opacity="0.7">
+			</section>
+
+			<section>
+				<h2>Are scaling laws really "laws"</h2>
+
+				<ul>
+					<li class="fragment">Different conclusions by different research groups</li>
+					<li class="fragment">Different model architectures => different results and costs </li>
+					<li class="fragment">Inference-time algorithms matter a lot</li>
+					<li class="fragment">Foundational theory missing</li>
+				</ul>
+
+				<!-- https://www.jonvet.com/blog/llm-scaling-in-2025#are-scaling-laws-still-valid-or-have-we-hit-a-wall -->
+
+			</section>
+
+			<section>
+				<h2>History of LLMs</h2>
+				<ul>
+					<li class="fragment">Major improvements came from new architectures and algorithms</li>
+					<li class="fragment">o1 => Chain of thought</li>
+					<li class="fragment">R2 => mixture of experts</li>
+				</ul>
+			</section>
+
+			<section> 
+			<img src="images/openai-compute-spend-2024.png" /> 
+			<!-- Josh You (2025), "Most of OpenAI’s 2024 compute went to experiments". Published online at epoch.ai. Retrieved from: 'https://epoch.ai/data-insights/openai-compute-spend' [online resource] -->
+			 </section>
+
+			<section data-background="images/gemini/mountains.png" data-background-opacity="1" data-state="hide-leaves">
+				<!-- Local maxima? -->
+			</section>
+
+			<section>
+				<h2>Chasing diminishing returns</h2>
 
 				<p class="fragment">
-					Not much...
+					Small improvement in model capability on small task => exponential improvement in multi-step tasks
 				</p>
-
 			</section>
 
 			<section>
-				<h1>Introducing HTMX</h1>
+				<h2>Cambrian explosion of LLM applications</h2>
+				<p class="fragment">Even of frontier LLMs stopped getting better</p>
+			</section>
+
+			<section>
+				<h2>Advice for juniors and would be programmers</h2>
 				<ul>
-					<li class="fragment">Tiny, simple JS library</li>
-					<li class="fragment">Allows you to create rich frontend experiences</li>
-					<li class="fragment">By adding afew simple attributes to HTML</li>
-					<li class="fragment">Works on slow devices</li>
+					<li class="fragment">Foundational code skills: CRITICAL</li>
+					<li class="fragment">Solve real problems (don't just do tutorials)</li>
+					<li class="fragment">Builds mental skills, strength, discipline</li>
+					<li class="fragment">Don't wait for someone to teach you</li>
 				</ul>
 			</section>
 
 			<section>
-					<h2>How?</h2>
-
-					<pre><code class="hljs html" data-line-numbers data-trim>
-						<button hx-post="/clicked" hx-swap="outerHTML">
-							Click Me
-						</button>
-					</code></pre>
-			</section>
-
-			<section>
-				<h2>Versus React</h2>
-				<a href="https://chatgpt.com/share/672dc3e5-a260-8002-a7d6-51302bc03b19">see chat</a>
-			</section>
-
-			<section>
-				<h2>But does it scale?</h2>
-
+				<h2>How I learned to code</h2>
 				<ul>
-					<li class="fragment">How much compute does it need?</li>
-					<li class="fragment">Can it handle complexity</li>
+					<li class="fragment">Grade 10: computer studies teacher</li>
+					<li class="fragment">Learned from books, "ran" code on paper</li>
+					<li class="fragment">Found a teacher in a nearby school. One lesson/month</li>
+					<li class="fragment">Dial up internet</li>
+					<li class="fragment">Got a R9.50/hour job to save for a PC</li>
+					<li class="fragment">Built silly games</li>
+				</ul>
+			</section>
+
+			<!-- <section>
+				<h2>Some unusual strengths</h2>
+				<ul>
+					<li class="fragment">US $20 /month is a lot</li>
+					<li class="fragment">Harder for you to outsource your thinking</li>
+				</ul>
+			</section> -->
+
+			<section>
+				<h2>Chapter 3</h2>
+				<h1>LLM assisted coding</h1>
+			</section>
+
+			<section>
+				<h2>Trust</h2>
+				<ul>
+					<li class="fragment">Before: Devs would write all their own code</li>
+					<li class="fragment">Default level of trust</li>
+					<li class="fragment">Sometimes a bit sloppy with testing, monitoring, validation...</li>
+					<li class="fragment">How to trust LLM-generated code?</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>State management with Alpine.JS</h2>
-				<pre><code class="hljs html" data-line-numbers data-trim>
-					<div x-data="{ open: false }">
-						<button @click="open = true">Expand</button>
-					
-						<span x-show="open">
-							Content...
-						</span>
-					</div>
-				</code></pre>
-			</section>
-
-			<section>
-				<h2>Testing with Playwright</h2>
-			</section>
-
-
-			<section>
-				<h2>What is simplicity worth?</h2>
-			</section>
-
-				<section>
-
-					<h2>My project</h2>
-
-					<img src="images/fullstack_real.drawio.svg" height="300" />
-
-				</section>
-				<section>
-
-					<h2>My project</h2>
-
-					<img src="images/fullstack_better.drawio.svg" height="300" />
-
-
-				</section>
-
-			<section>
-				<h2>Introduced HTMX</h2>
-
+				<h2>How much do you need to trust your code</h2>
 				<ul>
-					<li class="fragment">Everyone was productive</li>
-					<li class="fragment">I was more productive too</li>
+					<li>"Build me the new flappy bird" => 😋</li>
+					<li>"Build me the new Gmail" => 😨</li>
+					<li>"Control this nuclear power station" => 😱</li>
+				</ul>
+			</section>
+
+			<section data-auto-animate>
+				<h2>The cost of software</h2>
+				<ol>
+					<li data-id="one" class="fragment">Initial build 💸💸</li>
+					<li data-id="two" class="fragment">Maintenance and improvement 💸💸💸💸💸</li>
+				</ol>
+			</section>
+
+			<section data-auto-animate>
+				<h2>The cost of software</h2>
+				<ol>
+					<li data-id="one">Initial build using LLM 💸</li>
+					<li data-id="two">Maintenance and improvement 💸💸💸💸💸<span class="fragment">💸💸💸💸💸💸💸💸💸💸</span></li>
+				</ol>
+			</section>
+
+			<section>
+				<h3>Step 1</h3>
+				<h2>Decide</h2>
+				<ul>
+					<li>How much trust?</li>
+					<li>How maintainable?</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>This is what winning feels like</h2>
+				<h3>Step 2</h3>
+				<h2>
+					Get the small things right
+				</h2>
 				<ul>
-					<li class="fragment">Same team members => more value</li>
-					<li class="fragment">Code base smaller + simpler</li>
-					<li class="fragment">Fewer weird bugs => less rework and troubleshooting</li>
-					<li class="fragment">Everyone == Full stack (including juniors!)</li>
+					<li class="fragment">Chase your own diminishing returns on small tasks</li>
+					<li class="fragment">Don't start with the fanciest stuff</li>
+					<li class="fragment">Code in an interactive way. Step by step</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Learn about...</h2>
+				<ul>
+					<li class="fragment">Context!</li>
+					<li class="fragment">Intention setting</li>
+					<li class="fragment">Guardrails and checks</li>
+					<li class="fragment">What it is good and bad at</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Step 3</h3>
+				<h2>
+					Get bigger things right
+				</h2>
+				<ul>
+					<li class="fragment">How to decompose problems</li>
+					<li class="fragment">How to run multi-problem tasks</li>
+					<li class="fragment">How to discover problems</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Learn about...</h2>
+				<ul>
+					<li class="fragment">Context! Even more!</li>
+					<li class="fragment">Subagents</li>
+					<li class="fragment">How to spot bad "assumptions"</li>
+					<li class="fragment">Reduce blast radius</li>
+					<li class="fragment">Spec driven development</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Step 4</h3>
+				<h2>
+					Get things right faster
+				</h2>
+				
+				<p class="fragment">Now you can use the fancy stuff</p>
+			</section>
+
+			<section>
+				<h2>Advice</h2>
+				<ul>
+					<li class="fragment">Be structured and intentional when adopting these tools</li>
+					<li class="fragment">Learn your foundations first, otherwise step 1 is out of reach</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Epilogue</h2>
+				<h1>Make your own luck</h1>
+			</section>
+
+			<section>
+				<h2>Weight the dice in your favor</h2>
+				<ul>
+					<li class="fragment">Improve your ability to learn and think</li>
+					<li class="fragment">Become someone who can do hard things</li>
+					<li class="fragment">Become a high agency person</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Roll more dice</h2>
+				<ul>
+					<li class="fragment">Connect with problems</li>
+					<li class="fragment">Connect with people</li>
+					<li class="fragment">Learn in public</li>
 				</ul>
 			</section>
 			
 			<section>
-				<h2>Code Quality</h2>
-				<ul>
-					<li class="fragment">Small compared to React app</li>
-					<li class="fragment">Easy to reason about</li>
-					<li class="fragment">=> Fewer bugs and faster dev team</li>
-					<li class="fragment">Testing and versioning easier</li>
-					<li class="fragment">Complicated frontend build pipeline goes away</li>
-					<li class="fragment">Deployment simpler</li>
-					<li class="fragment">Faster client code, better device support</li>
-				</ul>
-			</section>
-
-			<section>
-					<h2>Remember: Organisations that do web dev</h2>
-					<ul>
-						<li class="fragment">Fullstack devs are expensive</li>
-						<li class="fragment">Backend team / Frontend team</li>
-						<li class="fragment">Teamwork complexities + friction (add more tools? GraphQL?)</li>
-						<li class="fragment">Extra handoffs, more task juggling</li>
-						<li class="fragment">Add project management capacity</li>
-					</ul>
+				<h2>Thank you</h2>
 			</section>
 
 
-			<section>
 
-					<h2><a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a></h2>
-
-					Organizations which design systems (in the broad sense used here) are constrained to produce designs
-					which are copies
-					of the communication structures of these organizations
-
-					<p class="fragment">Use tools that remove constraints on team structure</p>
-				</section>
-
-				<section>
-				<h2>But wait, there's more</h2>
-				<ul>
-					<li class="fragment">Lowers barrier to entry to web dev</li>
-					<li class="fragment">Larger, cheaper talent pool!</li>
-					<li class="fragment">Less risk in taking on junior staff and trying new things</li>
-					<li class="fragment">Juniors get an opportunity to grow</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Getting started</h2>
-				<ul>
-					<li class="fragment">Some inspiration</li>
-					<li class="fragment">Django Starter Project</li>
-					<li class="fragment">Training at Prelude</li>
-				</ul>
-			</section>
-
-
-			
-			
 
 		</div>
 	</div>
+
+
+	<div
+		style="position: absolute; bottom:0.5em; font-size:2em ; text-align: left; width: 100%; color: gray; padding-left: 0.5em;">
+		prelude.tech | sheenaoc.com | @sheena@fosstodon.org | @sheena-oconnell.bsky.social | x: @sheena_oconnell
+
+	</div>
+
+
+
+	<div style="position: absolute; top:1em; left:1em">
+		<img src="images/brand/Prelude - Logo.svg" width="150em" />
+	</div>
+
 
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
