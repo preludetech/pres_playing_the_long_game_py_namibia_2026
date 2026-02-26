@@ -1,34 +1,19 @@
 timing = """
 # intro 
 
-intro 1:20 
-me: 3:40
+intro 4:30
 
 # chapter 1 
 
-ch1_intro: 2:40
-ch1_2024: 1:15
-deepseek: 2:00
-scaling_laws 4:00
-gpt5: 4:30
+eng 10:23
 
-# chapter 2
 
-# ch2_bubble: 4:00
+# ch 2
 
-# chapter 3 
+t 12:00
 
-ch3 8:44
-
-# chapter 4 
-# intro-to-infra: 6:00
-# safety 8:00
-# cognitive: 1:40
-# centaur: 2:05
-# Stanford: 1:30
-# structure: 2:30
-# bubble: 1:00
-# individual: 0:30
+ch3 8:00
+ep 4:00
 """
 
 
